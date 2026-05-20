@@ -5,12 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://slidnfmpmk8v" path="res://assets/images/SpriteSheetsecond.png" id="2_sc6c1"]
 [ext_resource type="PackedScene" uid="uid://drb5fwqdgypqh" path="res://scenes/player_1.tscn" id="3_ng40l"]
 [ext_resource type="PackedScene" uid="uid://ctvyv02di7av0" path="res://scenes/player_2.tscn" id="4_04hp8"]
-[ext_resource type="Script" uid="uid://cu86vlmtay04e" path="res://scripts/canvas_layer.gd" id="5_8hlpj"]
+[ext_resource type="Script" path="res://scripts/canvas_layer.gd" id="5_8hlpj"]
 [ext_resource type="PackedScene" uid="uid://djul02odexf1a" path="res://scenes/gameover.tscn" id="6_qhnv2"]
 [ext_resource type="PackedScene" path="res://scenes/spike.tscn" id="7_vru0x"]
 [ext_resource type="PackedScene" uid="uid://cbri65q50s534" path="res://scenes/enemy.tscn" id="8_5oqfd"]
 [ext_resource type="PackedScene" uid="uid://mrg4ei2ucvqx" path="res://scenes/mole.tscn" id="9_04hp8"]
-[ext_resource type="PackedScene" uid="uid://ba3nunuuf1ek" path="res://scenes/ranged_monster.tscn" id="10_8hlpj"]
+[ext_resource type="PackedScene" uid="uid://bglb1a0hflbft" path="res://scenes/ranged_monster.tscn" id="10_8hlpj"]
 [ext_resource type="PackedScene" uid="uid://bvmjmb4y3q1gy" path="res://scenes/flying_enemy.tscn" id="11_qhnv2"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qjeyg"]
@@ -1140,7 +1140,7 @@ sources/0 = SubResource("TileSetAtlasSource_3qnke")
 sources/1 = SubResource("TileSetAtlasSource_h3xc6")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhnv2"]
-size = Vector2(95.875, 60.125)
+size = Vector2(42.9375, 60.125)
 
 [node name="Level4" type="StaticBody2D" unique_id=348861856]
 position = Vector2(560, 639)
@@ -1218,7 +1218,7 @@ position = Vector2(312, -63)
 collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=175102598]
-position = Vector2(-728, 76)
+position = Vector2(-754.46875, 76)
 shape = SubResource("RectangleShape2D_qhnv2")
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]

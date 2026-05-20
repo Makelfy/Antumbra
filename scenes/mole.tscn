@@ -55,14 +55,14 @@ position = Vector2(0, -17)
 sprite_frames = SubResource("SpriteFrames_slj7y")
 animation = &"dig"
 
-[node name="PointLight2D3" type="PointLight2D" parent="Sprite2D" unique_id=2050600645]
-position = Vector2(-21, 24)
-scale = Vector2(0.0018136151, 0.0026077747)
+[node name="PointLight2D2" type="PointLight2D" parent="Sprite2D" unique_id=1449615629]
+position = Vector2(-20.58533, 23.090908)
+scale = Vector2(0.0026879772, 0.0028201295)
 color = Color(1, 1, 0, 1)
-energy = 1.4
+energy = 2.85
 shadow_enabled = true
 texture = ExtResource("6_ev00m")
-texture_scale = 19.33
+texture_scale = 19.14
 
 [node name="Timer" type="Timer" parent="." unique_id=887633604]
 wait_time = 5.0

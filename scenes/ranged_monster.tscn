@@ -50,41 +50,14 @@ shoot5 = ExtResource("7_8gedd")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=873292329]
 sprite_frames = SubResource("SpriteFrames_5boi2")
 
-[node name="PointLight2D" type="PointLight2D" parent="Sprite2D" unique_id=749663303]
-position = Vector2(-4, -9)
-scale = Vector2(0.041259736, 0.04434714)
+[node name="PointLight2D2" type="PointLight2D" parent="Sprite2D" unique_id=784513238]
+position = Vector2(1.9999971, -6.000001)
+scale = Vector2(0.008187294, 0.007809478)
 color = Color(1, 1, 0, 1)
-energy = 0.28
+energy = 2.85
 shadow_enabled = true
 texture = ExtResource("11_i373v")
-texture_scale = 4.51
-
-[node name="PointLight2D2" type="PointLight2D" parent="Sprite2D" unique_id=1298666400]
-position = Vector2(-9, 4)
-scale = Vector2(0.041259736, 0.04434714)
-color = Color(1, 1, 0, 1)
-energy = 0.28
-shadow_enabled = true
-texture = ExtResource("11_i373v")
-texture_scale = 4.51
-
-[node name="PointLight2D4" type="PointLight2D" parent="Sprite2D" unique_id=275120824]
-position = Vector2(7, -3.9999998)
-scale = Vector2(0.041259736, 0.04434714)
-color = Color(1, 1, 0, 1)
-energy = 0.28
-shadow_enabled = true
-texture = ExtResource("11_i373v")
-texture_scale = 4.51
-
-[node name="PointLight2D5" type="PointLight2D" parent="Sprite2D" unique_id=1240596925]
-position = Vector2(16, -4)
-scale = Vector2(0.041259736, 0.04434714)
-color = Color(1, 1, 0, 1)
-energy = 0.28
-shadow_enabled = true
-texture = ExtResource("11_i373v")
-texture_scale = 4.51
+texture_scale = 19.14
 
 [node name="Player1Raycast" type="RayCast2D" parent="." unique_id=382995108]
 collision_mask = 6

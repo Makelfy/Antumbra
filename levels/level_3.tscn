@@ -1221,3 +1221,5 @@ position = Vector2(-468.9375, -478.9375)
 shape = SubResource("RectangleShape2D_lsnkt")
 
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer" method="_on_button_pressed"]
+[connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]
+[connection signal="body_exited" from="Finish" to="." method="_on_finish_body_exited"]
