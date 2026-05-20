@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bglb1a0hflbft"]
+[gd_scene format=3 uid="uid://ba3nunuuf1ek"]
 
 [ext_resource type="Script" uid="uid://drwh624jcaes3" path="res://scripts/ranged_monster.gd" id="1_rwvi7"]
 [ext_resource type="PackedScene" uid="uid://b3ecxlmyl5780" path="res://scenes/bullet.tscn" id="2_4xx58"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cbia1arbe7vrv" path="res://assets/images/shooting_enemy_shoot.png" id="5_kgish"]
 [ext_resource type="AudioStream" uid="uid://dm8mq47x8r3ri" path="res://audio/sound_effects/enemy/shooting_enemy/attack/shooting_enemy_attack5.mp3" id="6_iqp7w"]
 [ext_resource type="AudioStream" uid="uid://davkaasf6uane" path="res://audio/sound_effects/enemy/shooting_enemy/attack/shooting_enemy_attack.mp3" id="7_8gedd"]
+[ext_resource type="Texture2D" uid="uid://cx6od42bj8bjs" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="11_i373v"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5boi2"]
 animations = [{
@@ -49,6 +50,42 @@ shoot5 = ExtResource("7_8gedd")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=873292329]
 sprite_frames = SubResource("SpriteFrames_5boi2")
 
+[node name="PointLight2D" type="PointLight2D" parent="Sprite2D" unique_id=749663303]
+position = Vector2(-4, -9)
+scale = Vector2(0.041259736, 0.04434714)
+color = Color(1, 1, 0, 1)
+energy = 0.28
+shadow_enabled = true
+texture = ExtResource("11_i373v")
+texture_scale = 4.51
+
+[node name="PointLight2D2" type="PointLight2D" parent="Sprite2D" unique_id=1298666400]
+position = Vector2(-9, 4)
+scale = Vector2(0.041259736, 0.04434714)
+color = Color(1, 1, 0, 1)
+energy = 0.28
+shadow_enabled = true
+texture = ExtResource("11_i373v")
+texture_scale = 4.51
+
+[node name="PointLight2D4" type="PointLight2D" parent="Sprite2D" unique_id=275120824]
+position = Vector2(7, -3.9999998)
+scale = Vector2(0.041259736, 0.04434714)
+color = Color(1, 1, 0, 1)
+energy = 0.28
+shadow_enabled = true
+texture = ExtResource("11_i373v")
+texture_scale = 4.51
+
+[node name="PointLight2D5" type="PointLight2D" parent="Sprite2D" unique_id=1240596925]
+position = Vector2(16, -4)
+scale = Vector2(0.041259736, 0.04434714)
+color = Color(1, 1, 0, 1)
+energy = 0.28
+shadow_enabled = true
+texture = ExtResource("11_i373v")
+texture_scale = 4.51
+
 [node name="Player1Raycast" type="RayCast2D" parent="." unique_id=382995108]
 collision_mask = 6
 
@@ -60,6 +97,7 @@ wait_time = 3.0
 autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=316910807]
+visible = false
 position = Vector2(2, 9)
 shape = SubResource("RectangleShape2D_74y1t")
 
