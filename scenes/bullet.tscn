@@ -3,9 +3,12 @@
 [ext_resource type="Script" uid="uid://c78ed7nds2v4g" path="res://scripts/bullet.gd" id="1_y25gk"]
 [ext_resource type="Texture2D" uid="uid://cx6od42bj8bjs" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="2_y25gk"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y25gk"]
-radius = 67.20447
-height = 134.40894
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qncy5"]
+size = Vector2(103.606316, 33.27291)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tamys"]
+atlas = ExtResource("2_l5glv")
+region = Rect2(38.310642, 30.187649, 3.9568863, 3.2374573)
 
 [node name="Bullet" type="Area2D" unique_id=185754786]
 z_index = 1
@@ -14,16 +17,23 @@ collision_mask = 7
 script = ExtResource("1_y25gk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=346791140]
-scale = Vector2(1.4964219, 1.3558415)
-shape = SubResource("CapsuleShape2D_y25gk")
+position = Vector2(-9.07725e-06, 4.4815516e-07)
+scale = Vector2(1.4964213, 1.355841)
+shape = SubResource("RectangleShape2D_qncy5")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=395708809]
-z_index = 15
-offset_left = -62.015503
-offset_top = -67.66917
-offset_right = 69.76744
-offset_bottom = 67.66915
-color = Color(1, 0.7137255, 0, 1)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1116610721]
+z_index = 5
+scale = Vector2(51.092617, 13.526225)
+texture = SubResource("AtlasTexture_tamys")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Sprite2D" unique_id=445583989]
+position = Vector2(0, -4.7683716e-07)
+scale = Vector2(0.0006055089, 0.00066413847)
+color = Color(1, 1, 0, 1)
+energy = 1.4
+shadow_enabled = true
+texture = ExtResource("3_l5glv")
+texture_scale = 19.33
 
 [node name="PointLight2D2" type="PointLight2D" parent="." unique_id=1210719084]
 position = Vector2(3.8146973e-06, 7.518799)

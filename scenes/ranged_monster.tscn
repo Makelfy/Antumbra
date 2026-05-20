@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bglb1a0hflbft"]
+[gd_scene format=3 uid="uid://ba3nunuuf1ek"]
 
 [ext_resource type="Script" uid="uid://drwh624jcaes3" path="res://scripts/ranged_monster.gd" id="1_rwvi7"]
 [ext_resource type="PackedScene" uid="uid://b3ecxlmyl5780" path="res://scenes/bullet.tscn" id="2_4xx58"]
@@ -70,6 +70,7 @@ wait_time = 3.0
 autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=316910807]
+visible = false
 position = Vector2(2, 9)
 shape = SubResource("RectangleShape2D_74y1t")
 
